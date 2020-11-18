@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+</head>
+<body>
+  <canvas id="mycanvas" height ="800" width = "1600">
+</body>
+<script src="turtle.js"></script>
+<script src="hsv.js"></script>
+<script>
+  var p = new Turtle(document.getElementById("mycanvas"));
+  p.moveto(300, 650);
+  p.penDown = true;
+
+function Square(size){
+  for(var i = 0; i < 4; i++){
+    p.forward(size);
+    p.right(90);
+  }
+}
+
+  p.left(180);
+  p.forward(200);
+  p.right(90);
+  p.forward(300);
+  p.left(60);
+  p.forward(160);
+  p.right(60);
+  p.forward(250);
+  p.right(50);
+  p.forward(160);
+  p.left(50);
+  p.forward(210);
+  p.right(50);
+  p.forward(60);
+  p.right(40);
+  p.forward(100);
+  p.left(15);
+  p.forward(20);
+  p.right(15);
+  p.forward(10);
+  p.right(15);
+  p.forward(20);
+  p.left(15);
+  p.forward(50);  
+  p.right(90);
+  p.forward(200);
+
+  p.left(90);
+  for(var i = 0; i < 18; i++)
+  {
+    p.forward(20);
+    p.right(20);
+  }
+ 
+  p.right(90);
+  p.penDown = false;
+  p.forward(113);
+  p.penDown = true;
+  p.forward(300);
+  
+  p.left(90);
+  for(var i = 0; i < 18; i++)
+  {
+    p.forward(20);
+    p.right(20);
+  }
+
+  p.right(90);
+  p.penDown = false;
+  p.forward(113);
+  p.penDown = true;
+  p.forward(256);
+  p.right(90);
+  p.forward(51);
+  p.right(90);
+  p.forward(981);
+  p.left(180);
+  p.forward(510);
+  p.right(90);
+  p.forward(315);
+  p.right(90);
+  p.forward(159);
+  p.right(50);
+  p.forward(158);
+  p.right(40);
+  p.forward(120);
+  p.right(40);
+  p.forward(97);
+  p.right(50);
+  p.forward(199);
+  p.right(90);
+  p.forward(195);
+  p.right(90);
+  p.forward(270);
+
+
+  
+  
+  
+
+</script>
+</html>
