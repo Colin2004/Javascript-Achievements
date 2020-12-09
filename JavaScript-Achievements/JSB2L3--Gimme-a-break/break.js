@@ -1,19 +1,26 @@
 //via het DOM document object model wordt er een link gemaakt naar elementen uit je HTML file
 i = document.getElementById("break_img")//verwijzing naar je <img id='break_img'>
-h = document.getElementById("work_img")
 p = document.getElementById("clock")//verwijzing naar je <p id='clock'>
 
-breakStart = new Date("December 2, 2020 12:04:00")
-breakEnd = new Date("December 2, 2020 12:05:00")
+breakStart = new Date('December 2, 2020 11:57:00')
+breakEnd = new Date('December 2, 2020 11:58:20')
 //stel de begin en eindtijd van je break hier in
 
-e = setInterval(updateTime,1000) //code zorgt dat de update time functie elke seconde wordt uitgevoerd
+e = setInterval(updateTime, 1000) //code zorgt dat de update time functie elke seconde wordt uitgevoerd
 
 function updateTime(){
-    d = new Date()
-     p.innerHTML = "Break Time from "+breakStart.toTimeString()+" until " +breakEnd.toTimeString()+"<br/> Time: "+d.getHours() +" : "+ d.getMinutes() +" : "+ d.getSeconds()
-   
+    var d = new Date()
+    p.innerHTML = "Break Time from "+breakStart.toTimeString()+" until " +breakEnd.toTimeString()+"<br/> Time: "+d.getHours() +" : "+ d.getMinutes() +" : "+ d.getSeconds()
+    
    //check hier hoe laat het is en of je wel of geen break moet hebben
+    if(d.getSeconds() == breakStart.getSeconds()){
+        breakNow()
+    }
+         
+    if(d.getSeconds() == breakEnd.getSeconds()){
+        endBreak()
+    }
+
 }
 function breakNow(){
     //pas hier de source van je image aan voor als je een break hebt
