@@ -1,0 +1,35 @@
+.blokjes {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    margin-right: 1250px;
+}
+
+div {
+    width: 100px;
+    height: 100px;
+    color: #ffffff;
+    background-color: #000000;
+    padding: 10px;
+    margin: 5px;
+}
+
+.blokje--rood {
+    color: #ffffff;
+    background-color: #ff0000;
+}
+
+.blokje--blauw {
+    color: white;
+    background-color: blue;
+}
+.blokje--geel {
+    color: #ffffff;
+    background-color: yellow;
+}
+
+.blokje--groen {
+    color: white;
+    background-color: green;
+}
