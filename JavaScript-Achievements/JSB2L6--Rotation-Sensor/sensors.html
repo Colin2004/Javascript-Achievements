@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+   <head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+      <meta name="author" content="Mediacollege Amsterdam">
+      <title>Device Orientation</title>
+      <style>
+         body{
+            color: #00FF66;
+         }
+      </style>
+      <script src = "sensor.js" defer></script>
+      <script src = "txt2speech.js"></script>
+   </head>
+   <body>
+      <h1>Device Orientation API</h1>  
+         <div>
+             Coordinates:
+            <ul>
+               <li>beta front-back :<span id="beta"  >...</span></li>
+               <li>gamma left-right:<span id="gamma" >...</span></li>
+               <li>alpha Z-axis:   <span id="alpha" >...</span></li>
+               <li><span id="voice"></span></li>
+               <li><img id="myImage"></li>
+            </ul>
+         </div>
+   </body>
+</html>

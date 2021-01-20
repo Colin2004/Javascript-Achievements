@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Scroll on me!</title>
+    
+    <style>
+        #myDIV{
+            border: 2px solid black;
+        }
+    </style>
+</head>
+<body>
+    <h1 id="myDIV">Scroll hier!</h1>
+    <br>
+    <button id="knop">Reset</button>
+</body>
+<script>
+document.getElementById("myDIV").addEventListener("wheel", myFunction);
+hello = () => "hallo!";
+document.getElementById("knop").addEventListener("click", knopIngedrukt);
+function myFunction() {
+    document.getElementById("myDIV").innerHTML = hello();
+    this.style.fontSize = "40px";
+}
+function knopIngedrukt(){
+    location.reload();
+}
+</script>
+</html>

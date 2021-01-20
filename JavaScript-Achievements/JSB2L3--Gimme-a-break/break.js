@@ -1,8 +1,8 @@
 i = document.getElementById("break_img")//verwijzing naar je <img id='break_img'>
 p = document.getElementById("clock")//verwijzing naar je <p id='clock'>
 
-breakStart = new Date('December 9, 2020 11:37:00')
-breakEnd = new Date('December 9, 2020 11:37:20')
+breakStart = new Date('January 13, 2021 11:10:00')
+breakEnd = new Date('January 13, 2021 11:10:30')
 //stel de begin en eindtijd van je break hier in
 
 e = setInterval(updateTime, 1000) //code zorgt dat de update time functie elke seconde wordt uitgevoerd
